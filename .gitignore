@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.streamlit/secrets.toml
+.ipynb_checkpoints/
+*.log
