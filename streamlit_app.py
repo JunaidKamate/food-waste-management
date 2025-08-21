@@ -1,4 +1,4 @@
-# app/streamlit_app.py
+# streamlit_app.py
 import streamlit as st
 import sqlite3
 import pandas as pd
@@ -10,8 +10,8 @@ st.set_page_config(page_title="Food Waste Management", page_icon="🍲", layout=
 # -------- DB CONNECTION (cached) --------
 @st.cache_resource
 def get_conn():
-    # Absolute path to DB file
-    db_path = r"C:\Users\junai\food_wastage_DB\lfwms.db"
+    # Path to DB file (portable for Windows + Streamlit Cloud)
+    db_path = os.path.join(os.path.dirname(__file__), "lfwms.db")
     if not os.path.exists(db_path):
         st.error(f"❌ Database file not found at: {db_path}")
     return sqlite3.connect(db_path, check_same_thread=False)
@@ -279,4 +279,4 @@ elif section == "Analysis":
 elif section == "CRUD":
     st.header("✍ Manage Food Listings / Claims")
     action = st.radio("Action", ["Add Listing", "Update Claim Status", "Delete Listing"])
-    # (unchanged CRUD code)
+    # (your CRUD code stays the same)
