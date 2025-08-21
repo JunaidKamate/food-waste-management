@@ -1,4 +1,4 @@
-🍲 Food Waste Management System
+# 🍲 Food Waste Management System
 📖 Overview
 
 A Streamlit + SQLite application to manage food donations and claims.
