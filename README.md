@@ -40,6 +40,7 @@ food-waste-management/
 👨‍💻 Author
 
 Junaid Kamate
+
 📧 E-mail: junaidkamate10@gmail.com
 
 🔗 LinkedIn: https://www.linkedin.com/in/junaid-kamate/
